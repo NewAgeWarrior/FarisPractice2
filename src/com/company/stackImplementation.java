@@ -14,6 +14,9 @@ public class stackImplementation {
         stackElement.push("GLOVES");
         System.out.println(stackElement);
 
+        System.out.println("Please select which function you want to perform:");
+
+
         //adding elements is stack using function
         addStackElement(stackElement);
 
@@ -26,7 +29,7 @@ public class stackImplementation {
         Scanner input = new Scanner(System.in);  // Create a Scanner class object
         System.out.println("Enter List Elements");
 
-        String s = null;
+        String s;
 
 
         String elementsToInput = input.nextLine();  // Read the user input
@@ -39,6 +42,7 @@ public class stackImplementation {
 
             s= input.nextLine();
             a.push(s);
+            System.out.println(a);
         }
         System.out.println("Stack is:"+a);
     }
@@ -50,7 +54,7 @@ public class stackImplementation {
 
 
 
-        String s = null;
+
 
 
         String elementsToInput = input.nextLine();  // Read the user input
@@ -65,6 +69,6 @@ public class stackImplementation {
             System.out.println(a.pop());
 
         }
-        System.out.println("Stack Poped Elements are:"+a);
+        System.out.println("Stack after poped Elements are:"+a);
     }
 }
